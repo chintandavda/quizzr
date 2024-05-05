@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(223, 223, 255);
+}
+
+h1 {
+    font-size: 100px;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(192, 255, 192);
+    color: white;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+#next-btn,
+#submit-btn {
+    display: block;
+    margin: 15px auto;
+}
+
+#next-btn {
+    background-color: rgb(138, 45, 45);
+    color: white;
+}
+
+#submit-btn {
+    background-color: rgb(26, 104, 26);
+    color: white;
+}
+
+#next-btn:hover {
+    background-color: brown;
+}
+
+#submit-btn:hover {
+    background-color: green;
+}
+
+#question-container {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: darkblue;
+}
+
+.option-label {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    line-height: 35px;
+    font-weight: bold;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.quiz-option {
+    box-sizing: border-box;
+    flex: 1;
+    padding: 16px;
+    text-align: left;
+    background-color: rgb(192, 255, 192);
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 25px;
+    width: calc(100% - 60px);
+}
+
+.quiz-option:hover {
+    background-color: blue;
+    color: white;
+}
+
+.quiz-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quiz-option.selected {
+    background-color: #323137;
+    color: white;
+}
+
+#score-container {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: black;
+}
+
+#timer {
+    font-size: 40px;
+    margin: 0px auto;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: cadetblue;
+    line-height: 80px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
